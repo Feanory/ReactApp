@@ -1,0 +1,43 @@
+.film-wrapper
+  overflow: auto
+  height: 100%
+  width: 100%
+  
+.film-item-column
+  margin: 5px
+
+.film-title
+  text-align: center  
+
+.film-container
+  display: flex
+  width: 100%
+  justify-content: center
+  height: 100%
+  margin-bottom: 5px
+
+.poster-container
+  width: 50%
+  height: 100%
+
+.info-container
+  overflow: hidden
+  width: 50%
+  height: 100%
+  table
+    width: 100% !important
+    height: 100%
+
+@media (max-width: 768px)
+  .film-container
+    flex-direction: column
+    .poster-container
+      width: 100%
+      text-align: center
+    .info-container
+      width: 100%
+      .rating-block
+        text-align: center
+        margin: 5px
+  .film-description
+    font-size: 16px
